@@ -1,0 +1,12 @@
+import { render } from '@testing-library/react'
+
+import {{ pascalCase name }} from '.'
+
+describe('<{{ pascalCase name }} />', () => {
+  it('Should render the heading', () => {
+    const { container, getByRole } = render(<{{ pascalCase name }} />)
+    const heading = getByRole('heading', { name: '{{ pascalCase name }}' })
+    expect(heading).toBeInTheDocument()
+    expect(container).toMatchSnapshot()
+  })
+})
