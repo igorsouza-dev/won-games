@@ -27,7 +27,9 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "react-hooks"
+        "react-hooks",
+        "testing-library",
+        "jest-dom"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",

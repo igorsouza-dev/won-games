@@ -16,5 +16,9 @@ Basic.argTypes = {
   color: {
     options: ['white', 'black'],
     control: { type: 'select' }
+  },
+  size: {
+    options: ['normal', 'large'],
+    control: { type: 'radio' }
   }
 }
