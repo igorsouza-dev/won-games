@@ -17,6 +17,14 @@ export default {
     color: {
       options: ['white', 'black'],
       control: { type: 'select' }
+    },
+    lineColor: {
+      options: ['primary', 'secondary'],
+      control: { type: 'select' }
+    },
+    size: {
+      options: ['small', 'medium'],
+      control: { type: 'radio' }
     }
   }
 } as Meta
