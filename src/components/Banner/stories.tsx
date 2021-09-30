@@ -11,6 +11,9 @@ export default {
     subtitle: '<p>Play the new <strong>Clashlands</strong> season',
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
+  },
+  parameters: {
+    layout: 'fullscreen'
   }
 } as Meta
 
