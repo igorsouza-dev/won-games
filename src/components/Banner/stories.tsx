@@ -12,6 +12,19 @@ export default {
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
   },
+  argTypes: {
+    ribbon: {
+      type: 'string'
+    },
+    ribbonColor: {
+      options: ['primary', 'secondary'],
+      control: { type: 'select' }
+    },
+    ribbonSize: {
+      options: ['normal', 'small'],
+      control: { type: 'select' }
+    }
+  },
   parameters: {
     layout: 'fullscreen'
   }
@@ -22,3 +35,15 @@ export const Basic: Story<BannerProps> = (args) => (
     <Banner {...args} />
   </div>
 )
+
+export const WitRibbon: Story<BannerProps> = (args) => (
+  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
+    <Banner {...args} />
+  </div>
+)
+
+WitRibbon.args = {
+  ribbon: '20% OFF',
+  ribbonSize: 'small',
+  ribbonColor: 'secondary'
+}
