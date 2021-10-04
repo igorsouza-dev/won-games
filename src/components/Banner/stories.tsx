@@ -36,13 +36,13 @@ export const Basic: Story<BannerProps> = (args) => (
   </div>
 )
 
-export const WitRibbon: Story<BannerProps> = (args) => (
+export const WithRibbon: Story<BannerProps> = (args) => (
   <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
     <Banner {...args} />
   </div>
 )
 
-WitRibbon.args = {
+WithRibbon.args = {
   ribbon: '20% OFF',
   ribbonSize: 'small',
   ribbonColor: 'secondary'
