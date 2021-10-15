@@ -18,3 +18,9 @@ export default {
 const Template: Story<HighlightProps> = (args) => <Highlight {...args} />
 
 export const Basic = Template.bind({})
+
+export const WithFloatImg = Template.bind({})
+
+WithFloatImg.args = {
+  floatImage: '/img/red-dead-float.png'
+}
